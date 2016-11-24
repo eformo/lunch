@@ -1,10 +1,13 @@
 # lunch
 ## About
-For those that are stuck in an office with people that can't get a lunch ordered and called in.
+For those that are stuck in an office with people that can't get a lunch ordered and called in. This script will randomly choose a person to put the order together and another person to call the order in and email them.
+
 ## Instructions to run script
 1. Create a list of people in your office using the same format as example.in
 2. Modify the filename of the list in the script
 3. Download an image to send with your email  
+4. run the program
+`./lunch.py`
 
 ## Instructions to setup mutt with gmail
 1. Install Mutt  
