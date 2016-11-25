@@ -3,7 +3,7 @@ import random,sys,os
 
 if __name__ == "__main__":
 
-	mail_list = open('list.in','r').readlines()
+	mail_list = open('today.in','r').readlines()
 
 	order_organizer = random.choice(mail_list)
 	mail_list.remove(order_organizer)
@@ -21,8 +21,8 @@ if __name__ == "__main__":
 
 	cmd = """echo "%s"|timeout 10m mutt -e 'set realname=\'Lunch_Boss\'' -a lunch.jpg -s \'LUNCH TODAY\' -- %s""" % (organizer_text,order_organizer.split(' ')[1])
 	print cmd
-	#os.system(cmd)
-	cmd = """echo "%s"|timeout 10m mutt -e 'set realname=\'Lunch_Boss\'' -a lunch.jpg -s \'LUNCH TODAY\' -- %s""" % (order_text,order_organizer.split(' ')[1])
+	os.system(cmd)
+	cmd = """echo "%s"|timeout 10m mutt -e 'set realname=\'Lunch_Boss\'' -a lunch.jpg -s \'LUNCH TODAY\' -- %s""" % (order_text,order_caller.split(' ')[1])
 	print cmd
-	#os.system(cmd)
+	os.system(cmd)
 
